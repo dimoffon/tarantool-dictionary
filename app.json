@@ -1,0 +1,18 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ],
+  "env": {
+    "HTTP_HOST": "localhost",
+    "HTTP_PORT": "8080"
+  },
+  "formation": {
+  },
+  "name": "tarantool-dictionary",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
