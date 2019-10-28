@@ -1,12 +1,13 @@
 #!/usr/bin/env tarantool
 local server = require('server.server')
 local db = require('db')
+local test = require('test')
 log = require('log')
 
 box.cfg {
     listen = 3301,
     log_level = 5,
-    log = 'log.txt'
+    log = 'app.log'
 }
 
 local app = {
@@ -15,6 +16,7 @@ local app = {
         db:init()
         log.info('Start server')
         server:init()
+        test:run()
     end
 }
 
