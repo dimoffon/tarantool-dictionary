@@ -1,0 +1,10 @@
+version: '1'
+services:
+  dictionary:
+    build: .
+    environment:
+      - HTTP_HOST=dictionary
+      - HTTP_PORT=8080
+      - RPS_LIMIT=10
+    ports:
+      - "8080:8080"
